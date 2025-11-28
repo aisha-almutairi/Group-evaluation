@@ -81,6 +81,28 @@ transition: transform .14s, box-shadow .14s;
   .butterfly-img { width: 44px;
 height: 44px; display: block; object-fit: contain; }
 
+/* Resize butterflies for mobile */
+@media (max-width: 600px) {
+    .crit {
+        width: 25%;
+        min-width: 70px;
+    }
+
+    .crit .btn {
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
+    }
+
+    .butterfly-img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .crit .label {
+        font-size: 12px;
+    }
+}
   /* colors for groups */
   .g-jori{ background: linear-gradient(180deg, rgba(255,246,240,0.9), #fff);
 border:3px solid rgba(255,160,76,0.10); }
