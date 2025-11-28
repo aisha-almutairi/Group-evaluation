@@ -80,43 +80,42 @@ transition: transform .14s, box-shadow .14s;
   /* Butterfly Image Sizing */
   .butterfly-img { width: 44px;
 height: 44px; display: block; object-fit: contain; }
-/* Mobile Fix – Resize the butterflies and layout */
 @media (max-width: 600px) {
 
-    /* توزيع الفراشات في 4 أعمدة */
+    /* توزيع الفراشات في 5 أعمدة */
     .row {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 10px; /* مسافات أصغر */
+        grid-template-columns: repeat(5, 1fr);
+        gap: 8px;
         justify-items: center;
     }
 
     /* تصغير الصندوق */
     .crit {
-        width: auto;
-        min-width: 45px; /* أصغر */
-        padding: 4px; /* يقلل الحجم العام */
+        width: 100%;
+        min-width: 0;
     }
 
-    /* تصغير زر الفراشة */
+    /* زر الفراشة */
     .crit .btn {
         width: 34px;
         height: 34px;
-        border-radius: 10px;
+        border-radius: 8px;
     }
 
-    /* تصغير صورة الفراشة */
+    /* صورة الفراشة */
     .butterfly-img {
-        width: 22px;
-        height: 22px;
+        width: 20px;
+        height: 20px;
     }
 
-    /* تصغير النص */
+    /* النص */
     .crit .label {
         font-size: 10px;
+        text-align: center;
     }
 
-    /* تصغير صورة المجموعة فوق */
+    /* صورة المجموعة فوق */
     .circle img {
         width: 55px !important;
         height: 55px !important;
