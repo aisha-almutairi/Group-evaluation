@@ -87,38 +87,39 @@ height: 44px; display: block; object-fit: contain; }
     .row {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 14px;
+        gap: 10px; /* مسافات أصغر */
         justify-items: center;
     }
 
     /* تصغير الصندوق */
     .crit {
         width: auto;
-        min-width: 60px;
+        min-width: 45px; /* أصغر */
+        padding: 4px; /* يقلل الحجم العام */
     }
 
     /* تصغير زر الفراشة */
     .crit .btn {
-        width: 48px;
-        height: 48px;
-        border-radius: 12px;
+        width: 34px;
+        height: 34px;
+        border-radius: 10px;
     }
 
     /* تصغير صورة الفراشة */
     .butterfly-img {
-        width: 28px;
-        height: 28px;
+        width: 22px;
+        height: 22px;
     }
 
     /* تصغير النص */
     .crit .label {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     /* تصغير صورة المجموعة فوق */
     .circle img {
-        width: 70px !important;
-        height: 70px !important;
+        width: 55px !important;
+        height: 55px !important;
     }
 }
 
