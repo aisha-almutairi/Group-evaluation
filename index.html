@@ -80,55 +80,47 @@ transition: transform .14s, box-shadow .14s;
   /* Butterfly Image Sizing */
   .butterfly-img { width: 44px;
 height: 44px; display: block; object-fit: contain; }
-  /* Mobile Perfect Sizing */
+/* Mobile Fix – Resize the butterflies and layout */
 @media (max-width: 600px) {
 
-    /* تصغير حجم الفراشات */
+    /* توزيع الفراشات في 4 أعمدة */
+    .row {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 14px;
+        justify-items: center;
+    }
+
+    /* تصغير الصندوق */
+    .crit {
+        width: auto;
+        min-width: 60px;
+    }
+
+    /* تصغير زر الفراشة */
     .crit .btn {
-        width: 52px;
-        height: 52px;
-        border-radius: 14px;
+        width: 48px;
+        height: 48px;
+        border-radius: 12px;
     }
 
-    /* تصغير صورة الفراشة داخل الزر */
+    /* تصغير صورة الفراشة */
     .butterfly-img {
-        width: 32px;
-        height: 32px;
+        width: 28px;
+        height: 28px;
     }
 
-    /* تصغير النص تحت الفراشة */
+    /* تصغير النص */
     .crit .label {
         font-size: 12px;
-        margin-top: 6px;
     }
 
-    /* نترك المسافات كما هي (ما نصغرها) */
-    .row {
-        gap: 14px;
-        margin-top: 14px;
-    }
-
-    /* تصغير صور المجموعات */
-    .g-icon img {
-        width: 62px !important;
-        height: 62px !important;
-    }
-
-    /* تصغير اسم المجموعة قليلاً */
-    .g-title {
-        font-size: 20px !important;
-    }
-
-    /* نص العنوان */
-    .header-title {
-        font-size: 32px !important;
-    }
-
-    .header-sub {
-        font-size: 14px !important;
+    /* تصغير صورة المجموعة فوق */
+    .circle img {
+        width: 70px !important;
+        height: 70px !important;
     }
 }
-
 
   /* colors for groups */
   .g-jori{ background: linear-gradient(180deg, rgba(255,246,240,0.9), #fff);
