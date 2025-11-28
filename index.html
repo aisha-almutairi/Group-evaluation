@@ -80,57 +80,55 @@ transition: transform .14s, box-shadow .14s;
   /* Butterfly Image Sizing */
   .butterfly-img { width: 44px;
 height: 44px; display: block; object-fit: contain; }
-
-/* Mobile Full Resize */
+  /* Mobile Perfect Sizing */
 @media (max-width: 600px) {
 
-    /* تصغير حجم الصناديق */
-    .crit {
-        width: 22%;
-        min-width: 60px;
-        padding: 0;
-    }
-
-    /* تصغير أيقونات الفراشة */
+    /* تصغير حجم الفراشات */
     .crit .btn {
-        width: 42px;
-        height: 42px;
-        border-radius: 10px;
+        width: 52px;
+        height: 52px;
+        border-radius: 14px;
     }
 
+    /* تصغير صورة الفراشة داخل الزر */
     .butterfly-img {
-        width: 26px;
-        height: 26px;
+        width: 32px;
+        height: 32px;
     }
 
-    /* تصغير الخط */
+    /* تصغير النص تحت الفراشة */
     .crit .label {
-        font-size: 11px;
-        margin-top: 4px;
+        font-size: 12px;
+        margin-top: 6px;
     }
 
-    /* تصغير المسافات */
+    /* نترك المسافات كما هي (ما نصغرها) */
     .row {
-        gap: 6px;
-        margin-top: 10px;
+        gap: 14px;
+        margin-top: 14px;
     }
 
-    /* تصغير الصورة أعلى كل مجموعة */
+    /* تصغير صور المجموعات */
     .g-icon img {
-        width: 55px !important;
-        height: 55px !important;
+        width: 62px !important;
+        height: 62px !important;
     }
 
-    /* تصغير اسم المجموعة */
+    /* تصغير اسم المجموعة قليلاً */
     .g-title {
-        font-size: 18px;
+        font-size: 20px !important;
     }
 
-    /* تصغير هوامش مربعات المجموعات */
-    .group-box {
-        padding: 12px;
+    /* نص العنوان */
+    .header-title {
+        font-size: 32px !important;
+    }
+
+    .header-sub {
+        font-size: 14px !important;
     }
 }
+
 
   /* colors for groups */
   .g-jori{ background: linear-gradient(180deg, rgba(255,246,240,0.9), #fff);
